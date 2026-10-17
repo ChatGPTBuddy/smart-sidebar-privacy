@@ -3,86 +3,133 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy – Smart Sidebar (AITOPIA)</title>
+  <title>Privacy Policy – Smart Sidebar: Chat GPT, Claude &amp; DeepSeek</title>
   <style>
-    :root { --bg:#ffffff; --fg:#1a1a1a; --muted:#555; --link:#0b57d0; --line:#e5e5e5; }
+    :root { --bg:#f9fafb; --fg:#4b5563; --head:#111827; --sub:#1f2937; --link:#2563eb; --line:#e5e7eb; --code:#f3f4f6; }
     @media (prefers-color-scheme: dark) {
-      :root { --bg:#121212; --fg:#eaeaea; --muted:#aaa; --link:#8ab4f8; --line:#333; }
+      :root { --bg:#121212; --fg:#c4c7cc; --head:#f3f4f6; --sub:#e5e7eb; --link:#8ab4f8; --line:#333; --code:#262626; }
     }
     body { margin:0; background:var(--bg); color:var(--fg);
-           font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-    main { max-width:760px; margin:0 auto; padding:40px 16px 80px; }
-    h1 { font-size:2rem; margin:0 0 4px; }
-    h2 { font-size:1.2rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
-    .meta { color:var(--muted); margin:0 0 24px; }
-    a { color:var(--link); }
-    ul { padding-left:20px; }
+           font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+    main { max-width:56rem; margin:0 auto; padding:64px 16px; }
+    h1 { font-size:2.25rem; line-height:1.2; color:var(--head); margin:0 0 16px; }
+    h2 { font-size:1.5rem; color:var(--sub); margin:40px 0 16px; }
+    h3 { font-size:1.125rem; color:var(--sub); margin:24px 0 8px; }
+    .meta p { margin:4px 0; }
+    .meta { margin-bottom:32px; }
+    a { color:var(--link); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    code { background:var(--code); padding:0 4px; border-radius:4px; }
+    ul { padding-left:24px; }
+    ul.plain { list-style:none; padding-left:0; }
+    ul.plain li { margin:8px 0; }
+    .table-wrap { overflow-x:auto; margin-top:16px; }
+    table { min-width:100%; border:1px solid var(--line); border-collapse:collapse; }
+    th, td { padding:12px 16px; text-align:left; font-size:.875rem; border-bottom:1px solid var(--line); }
+    th { color:var(--sub); background:var(--code); }
   </style>
 </head>
 <body>
 <main>
-  <h1>Privacy Policy</h1>
-  <p class="meta">Smart Sidebar (AITOPIA) – Chrome extension<br>Last updated: October 17, 2026</p>
+  <h1>Privacy Policy for Smart Sidebar: Chat GPT, Claude &amp; DeepSeek</h1>
+  <div class="meta">
+    <p><strong>Last Updated:</strong> January 20, 2026</p>
+    <p><strong>Developer:</strong> Extchange</p>
+    <p><strong>Contact:</strong> <a href="mailto:info@extchange.com">info@extchange.com</a></p>
+  </div>
 
-  <p>This Privacy Policy explains how the Chrome extension <strong>Smart Sidebar (AITOPIA)</strong>
-    (the “Extension”), published on the Chrome Web Store by <strong>ChatGPT Buddy</strong>
-    (“we”, “us”), handles your information.</p>
+  <h2>Introduction</h2>
+  <p>This Privacy Policy describes how the "Smart Sidebar: Chat GPT, Claude &amp; DeepSeek" browser extension ("Extension", "we", "our", or "us") handles your information. We are committed to protecting your privacy and strictly adhering to the Google Chrome Web Store User Data Policy, specifically the "Limited Use" requirements.</p>
 
-  <h2>1. What the Extension does</h2>
-  <p>The Extension adds an AI assistant sidebar to your browser. It lets you chat with AI models,
-    summarize or translate web pages, analyze files you upload, and get AI answers next to search results.
-    The AI features are provided by our technology partner <strong>AITOPIA INC</strong> (aitopia.ai).</p>
-
-  <h2>2. Information that is processed</h2>
+  <h2>1. Information We Collect</h2>
+  <p>We collect and process the following types of data solely to provide the Extension's functionality:</p>
+  <h3>A. User Preferences (Local Storage)</h3>
+  <p>We store the following preferences locally on your device to remember your choices:</p>
   <ul>
-    <li><strong>Content you submit</strong> – prompts, messages, selected text, page content you ask the
-      Extension to summarize or translate, and files or images you upload. This content is sent to the
-      AI service only when you actively use a feature, so that a response can be generated.</li>
-    <li><strong>Account information</strong> – if you sign in (for example with Google), your name, email
-      address and profile picture are processed by AITOPIA to manage your account.</li>
-    <li><strong>Payment information</strong> – paid plans are handled by a payment processor (Stripe).
-      We do not receive or store your card details.</li>
-    <li><strong>Settings</strong> – your preferences (such as language, theme and sidebar settings) are
-      stored in your browser using Chrome storage.</li>
+    <li><strong>Privacy Consent Status:</strong> A flag (<code>privacy_consent</code>) confirming you have explicitly accepted this policy.</li>
+    <li><strong>AI Service Preference:</strong> Your choice between ChatGPT or AITOPIA.</li>
+    <li><strong>Popup Display Settings:</strong> Whether to show the popup window when clicking the extension icon.</li>
+  </ul>
+  <h3>B. Page Content (Conditional &amp; Ephemeral)</h3>
+  <p>To provide AI services (e.g., summarizing a webpage), the Extension enables you to send the text content of your current tab to an AI provider.</p>
+  <ul>
+    <li><strong>Strict Gatekeeping:</strong> We <strong>DO NOT</strong> access or read any page content until you have explicitly clicked "Accept &amp; Enable" on our Onboarding Page or in-product Consent Banner.</li>
+    <li><strong>User-Initiated:</strong> Content is processed only when you actively trigger a feature (e.g., opening the sidebar or clicking a prompt).</li>
   </ul>
 
-  <h2>3. How information is used</h2>
-  <p>Information is used only to provide and improve the Extension’s features: generating AI responses,
-    keeping you signed in, processing subscriptions and remembering your settings.</p>
-
-  <h2>4. What we do not do</h2>
-  <ul>
-    <li>We do not sell your personal information.</li>
-    <li>We do not use or transfer your data for purposes unrelated to the Extension’s core functionality.</li>
-    <li>We do not use or transfer your data to determine creditworthiness or for lending purposes.</li>
-    <li>We do not read or collect your browsing history; page content is only processed when you
-      explicitly ask the Extension to act on it.</li>
+  <h2>2. Information We Do NOT Collect</h2>
+  <p>We want to be absolutely clear about what we do <strong>not</strong> collect or transmit to external servers:</p>
+  <ul class="plain">
+    <li>❌ <strong>Personally Identifiable Information:</strong> Name, email, address, phone number.</li>
+    <li>❌ <strong>Sensitive Data:</strong> Health, financial, or authentication credentials.</li>
+    <li>❌ <strong>Browsing History:</strong> We do not track which sites you visit for analytics.</li>
+    <li>❌ <strong>User Activity:</strong> Clicks, mouse movements, keystrokes (outside of the interactions needed for the extension).</li>
+    <li>❌ <strong>Stored Website Content:</strong> We do not collect or store website content on our servers.</li>
   </ul>
 
-  <h2>5. Third parties</h2>
-  <p>To provide the service, data is processed by:</p>
+  <h2>3. Use of Information</h2>
+  <p>We use the information we collect for the single purpose of providing the Extension's features:</p>
   <ul>
-    <li><strong>AITOPIA INC</strong> – AI service and accounts.
-      See the <a href="https://aitopia.ai/privacy-policy">AITOPIA Privacy Policy</a>.</li>
-    <li><strong>AI model providers</strong> (such as OpenAI, Anthropic, Google, xAI, Meta and DeepSeek) –
-      the content of your requests is passed on to the model you select in order to generate a response.</li>
-    <li><strong>Stripe</strong> – payment processing. See the
-      <a href="https://stripe.com/privacy">Stripe Privacy Policy</a>.</li>
+    <li>To specific AI services (e.g., ChatGPT or AITOPIA) to generate the responses you request.</li>
+    <li>To maintain your personalized settings across browser sessions.</li>
+  </ul>
+  <p><strong>We certify that we comply with the Limited Use Policy:</strong></p>
+  <ul>
+    <li>We generally do not allow humans to read user data.</li>
+    <li>We do not use or transfer user data for any purposes other than providing the Extension's functionality.</li>
+    <li>We do not use or transfer user data to determine creditworthiness.</li>
+    <li>We do not sell user data.</li>
   </ul>
 
-  <h2>6. Data retention and deletion</h2>
-  <p>Settings stored in your browser are removed when you uninstall the Extension. To request access to or
-    deletion of account data, contact us at the address below and we will forward your request where needed.</p>
+  <h2>4. Information Sharing and Disclosure</h2>
+  <p>We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties.</p>
+  <h3>Third-Party AI Processors:</h3>
+  <p>When you use the AI features, the text data you provide (e.g., your prompt or current page text) is transmitted to the AI Service Provider you have selected to generate the response.</p>
+  <ul>
+    <li><strong>OpenAI (ChatGPT):</strong> If you choose ChatGPT, data is processed according to <a href="https://openai.com/privacy/" target="_blank" rel="noopener noreferrer">OpenAI's Privacy Policy</a>.</li>
+    <li><strong>AITOPIA:</strong> If you choose AITOPIA, data is processed according to <a href="https://aitopia.ai/privacy-policy" target="_blank" rel="noopener noreferrer">AITOPIA's Privacy Policy</a>.</li>
+  </ul>
+  <p>These providers act as data processors to fulfill your request.</p>
 
-  <h2>7. Children</h2>
-  <p>The Extension is not intended for children under 13, and we do not knowingly collect their information.</p>
+  <h2>5. Permissions Explained</h2>
+  <p>This Extension requires certain browser permissions to function. Here is why we need them:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Permission</th><th>Why It's Needed</th></tr></thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>To save your preferences and privacy consent status locally.</td></tr>
+        <tr><td><code>system.display</code></td><td>To center popup windows on your screen for a better user experience.</td></tr>
+        <tr><td><code>contextMenus</code></td><td>To add an "Options" menu when you right-click the extension icon.</td></tr>
+        <tr><td><code>host_permissions</code> (<code>&lt;all_urls&gt;</code>)</td><td>To enable the AITOPIA AI sidebar on webpages you visit. <strong>Note:</strong> This permission is used <strong>ONLY</strong> after you have granted explicit consent.</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-  <h2>8. Changes</h2>
-  <p>We may update this Privacy Policy. The “Last updated” date above shows when it was last changed.</p>
+  <h2>6. Data Security &amp; Retention</h2>
+  <ul>
+    <li><strong>Local Storage:</strong> Your preferences are stored locally in your browser (via <code>chrome.storage</code>).</li>
+    <li><strong>Encryption:</strong> All communication between the Extension and AI providers occurs over secure, encrypted HTTPS connections.</li>
+    <li><strong>Ephemeral Design:</strong> We do not retain your browsing content on our own servers. Page text sent to AI providers is for the immediate purpose of generating a response.</li>
+    <li><strong>Uninstall:</strong> You can clear locally stored data at any time by uninstalling the extension or clearing browser data.</li>
+  </ul>
 
-  <h2>9. Contact</h2>
-  <p>Questions about this Privacy Policy? Email
-    <a href="mailto:info@chatgptbuddy.com">info@chatgptbuddy.com</a>.</p>
+  <h2>7. Your Rights</h2>
+  <ul>
+    <li><strong>Withdraw Consent:</strong> You can withdraw consent by uninstalling the Extension, which immediately removes all code and local data access.</li>
+    <li><strong>Access &amp; Control:</strong> You have full control over when to trigger the AI features.</li>
+  </ul>
+
+  <h2>8. Compliance Certifications</h2>
+  <p>This Extension complies with:</p>
+  <ul>
+    <li><strong>Google Chrome Web Store User Data Policy</strong> (including "Limited Use").</li>
+    <li><strong>General Data Protection Regulation (GDPR)</strong> principles.</li>
+    <li><strong>California Consumer Privacy Act (CCPA)</strong> principles.</li>
+  </ul>
+
+  <h2>9. Contact Us</h2>
+  <p>If you have questions about this policy or our privacy practices, please contact:</p>
+  <p><strong>Email:</strong> <a href="mailto:info@extchange.com">info@extchange.com</a></p>
 </main>
 </body>
 </html>
